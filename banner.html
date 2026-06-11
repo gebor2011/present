@@ -2,173 +2,60 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capital Shield AI — 15 Модулей Анализа</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>Capital Shield AI — Telegram Banner</title>
     <style>
-        :root {
-            --bg-main: #060810;
-            --card-bg: rgba(22, 26, 38, 0.65);
-            --cyan-neon: #00D2FF;
-            --accent-green: #00E676;
-            --danger-red: #FF3B30;
-            --border-color: rgba(255, 255, 255, 0.06);
-        }
-
-        body { margin: 0; padding: 40px 0; background-color: var(--bg-main); color: #F5F6FA; font-family: 'Segoe UI', Roboto, Helvetica, sans-serif; display: flex; justify-content: center; }
-        
-        .banner-canvas {
-            position: relative;
-            width: 1024px;
-            height: 600px;
-            background: #090D1A;
-            border: 1px solid #1A263F;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.8);
-            overflow: hidden;
-            box-sizing: border-box;
-            padding: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .cyber-grid {
-            position: absolute;
-            left: 0; top: 0; width: 100%; height: 100%;
-            background-image: linear-gradient(rgba(0, 210, 255, 0.02) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(0, 210, 255, 0.02) 1px, transparent 1px);
-            background-size: 32px 32px;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .b2-grid-14 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            width: 540px;
-            margin-top: 15px;
-        }
-
-        .b2-item-14 {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border-color);
-            padding: 8px 12px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 12.5px;
-            font-weight: 600;
-            color: #FFFFFF;
-        }
-        .b2-item-14 i { width: 16px; text-anchor: middle; font-size: 13px; }
-
-        .glass-panel {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(0, 210, 255, 0.12);
-            border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-        }
-
-        .b2-btn {
-            background: linear-gradient(135deg, #00D2FF 0%, #0088FF 100%);
-            color: #060810;
-            font-size: 13px;
-            font-weight: 800;
-            padding: 12px 24px;
-            border-radius: 10px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 5px 15px rgba(0,210,255,0.2);
-            transition: 0.2s;
-        }
-        .b2-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,210,255,0.3); }
+        body { margin: 0; padding: 0; background: #0F111A; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        svg { background: #0F111A; box-shadow: 0 25px 60px rgba(0,0,0,0.6); }
     </style>
 </head>
 <body>
 
-    <div class="banner-canvas">
-        <div class="cyber-grid"></div>
-        <div style="position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(0,210,255,0.04) 0%, transparent 70%); left: -100px; top: -100px; z-index: 1;"></div>
+    <svg xmlns="http://w3.org" viewBox="0 0 512 512" width="512" height="512">
+        <!-- Глубокий темный фон вашего сайта -->
+        <rect width="512" height="512" fill="#0F111A"/>
+        
+        <!-- Технологичные кибер-круги и радар на фоне -->
+        <circle cx="256" cy="256" r="220" fill="none" stroke="#00D2FF" stroke-width="1" stroke-dasharray="4,8" opacity="0.15"/>
+        <circle cx="256" cy="256" r="160" fill="none" stroke="#00E676" stroke-width="1" stroke-dasharray="2,6" opacity="0.1"/>
+        <line x1="256" y1="36" x2="256" y2="476" stroke="#2A2F3F" stroke-width="0.5" opacity="0.3"/>
+        <line x1="36" y1="256" x2="476" y2="256" stroke="#2A2F3F" stroke-width="0.5" opacity="0.3"/>
 
-        <!-- ЛЕВАЯ СТОРОНА: КОНТЕНТНЫЙ БЛОК НА СЛУЖБЕ БЕЗОПАСНОСТИ -->
-        <div style="width: 550px; z-index: 10; position: relative;">
-            <div style="font-size: 30px; font-weight: 900; color: #FFFFFF; line-height: 1.25; text-transform: uppercase; letter-spacing: -0.5px;">
-                Полная проверка <span style="color: var(--cyan-neon);">Due Diligence</span><br/>
-                и стресс-тест платформ
-            </div>
-            <div style="font-size: 13.5px; color: #8E96A7; margin-top: 10px; font-weight: 600; line-height: 1.4;">
-                Capital Shield AI проводит глубокое сквозное ончейн-моделирование финансовой устойчивости систем.
-            </div>
-
-            <div style="font-size: 11px; font-weight: 800; color: var(--accent-green); margin-top: 25px; text-transform: uppercase; letter-spacing: 1.5px;">
-                🛡️ 14 базовых модулей комплексного анализа:
-            </div>
-            <div class="b2-grid-14">
-                <!-- Ряд 1 -->
-                <div class="b2-item-14"><i class="fa-solid fa-sack-dollar" style="color: #FFD700;"></i> 1. Деньги и касса</div>
-                <div class="b2-item-14"><i class="fa-solid fa-share-nodes" style="color: #FF6B00;"></i> 8. Соцсети и накрутки</div>
-                
-                <!-- Ряд 2 -->
-                <div class="b2-item-14"><i class="fa-solid fa-scale-balanced" style="color: #5F6B7D;"></i> 2. Юридический аудит</div>
-                <div class="b2-item-14"><i class="fa-solid fa-microchip" style="color: var(--cyan-neon);"></i> 9. Технологии кода</div>
-                
-                <!-- Ряд 3 -->
-                <div class="b2-item-14"><i class="fa-solid fa-magnifying-glass" style="color: #00E676;"></i> 3. Модуль OSINT</div>
-                <div class="b2-item-14"><i class="fa-solid fa-eye" style="color: #F5F6FA;"></i> 10. Реальность тренда</div>
-                
-                <!-- Ряд 4 -->
-                <div class="b2-item-14"><i class="fa-solid fa-comments" style="color: #8E96A7;"></i> 4. Аудит чатов и комьюнити</div>
-                <div class="b2-item-14"><i class="fa-solid fa-heart-pulse" style="color: #E05300;"></i> 11. Жизнеспособность</div>
-                
-                <!-- Ряд 5 -->
-                <div class="b2-item-14"><i class="fa-solid fa-calculator" style="color: #FF3B30;"></i> 5. Математика рисков</div>
-                <div class="b2-item-14"><i class="fa-solid fa-clock-rotate-left" style="color: #0088FF;"></i> 12. Хронология и трек</div>
-                
-                <!-- Ряд 6 -->
-                <div class="b2-item-14"><i class="fa-solid fa-map-location-dot" style="color: #AA820A;"></i> 6. Дорожная карта</div>
-                <div class="b2-item-14"><i class="fa-solid fa-shield-halved" style="color: #FFD700;"></i> 13. Уязвимости токена</div>
-                
-                <!-- Ряд 7 -->
-                <div class="b2-item-14"><i class="fa-solid fa-users-gears" style="color: #00D2FF;"></i> 7. Команда и бэкграунд</div>
-                <div class="b2-item-14"><i class="fa-solid fa-chart-line" style="color: #00E676;"></i> 14. Телеметрия пулов</div>
-            </div>
-
-            <!-- ФЛАГМАНСКИЙ 15-Й МОДУЛЬ «ФОРПОСТ» -->
-            <div class="b2-item-14" style="width: 540px; margin-top: 10px; border-color: rgba(0,230,118,0.3); background: rgba(0,230,118,0.03); padding: 10px 12px;">
-                <i class="fa-solid fa-tower-radar" style="color: var(--accent-green); font-size: 14px;"></i> 
-                <span style="color: var(--accent-green); font-weight: 800;">15. ИИ-СТРЕСС-ТЕСТ «ФОРПОСТ» — Моделирование кассового разрыва</span>
-            </div>
-
-            <!-- ПАНЕЛЬ ДЕЙСТВИЯ -->
-            <div style="display: flex; align-items: center; justify-content: space-between; width: 540px; margin-top: 20px; background: rgba(0, 0, 0, 0.2); border: 1px dashed rgba(0, 210, 255, 0.15); padding: 12px 18px; border-radius: 12px; box-sizing: border-box;">
-                <div style="font-size: 12px; color: #8E96A7; font-weight: 600; line-height: 1.4;">
-                    Ты будешь знать о проекте больше,<br/>чем все его лидеры.
-                </div>
-                <a href="https://t.me" target="_blank" class="b2-btn">Заказать аудит</a>
-            </div>
-        </div>
-
-        <!-- ПРАВАЯ СТОРОНА: СВОБОДНОЕ ЭЛИТАРНОЕ ПРОСТРАНСТВО ДЛЯ ВАШЕЙ ОРИГИНАЛЬНОЙ ГРАФИКИ -->
-        <div style="width: 380px; position: relative; z-index: 10; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+        <!-- Центральный объемный неоновый ЩИТ-ФОРПОСТ -->
+        <g transform="translate(256, 245)">
+            <!-- Внешнее свечение циана -->
+            <path d="M0 -90 L65 -70 L65 20 C65 65 32 100 0 115 C-32 100 -65 65 -65 20 L-65 -70 Z" fill="none" stroke="#00D2FF" stroke-width="8" opacity="0.15"/>
+            <!-- Основное тело щита -->
+            <path d="M0 -90 L65 -70 L65 20 C65 65 32 100 0 115 C-32 100 -65 65 -65 20 L-65 -70 Z" fill="#161A26" stroke="#00D2FF" stroke-width="3.5"/>
+            <!-- Внутренний изумрудный контур (Символ новой услуги) -->
+            <path d="M0 -80 L53 -63 L53 15 C53 53 26 82 0 95 C-26 82 -53 15 -53 15 L-53 -63 Z" fill="#1F263A" stroke="#00E676" stroke-width="1.5"/>
             
-            <!-- Вердикт ИИ -->
-            <div class="glass-panel" style="width: 320px; padding: 16px; box-sizing: border-box; text-align: center; border-color: rgba(255,59,48,0.25);">
-                <div style="font-size: 14px; font-weight: 900; color: var(--danger-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;"><i class="fa-solid fa-circle-exclamation"></i> Вердикт ИИ</div>
-                <div style="font-size: 12px; font-weight: 700; color: #FFFFFF; line-height: 1.4;">Считаем сухие цифры кассы.<br/>Определяем зоны дефицита.</div>
-            </div>
+            <!-- Стилизованная ИИ-микросхема внутри щита -->
+            <circle cx="0" cy="0" r="22" fill="none" stroke="#00D2FF" stroke-width="2" opacity="0.4"/>
+            <line x1="0" y1="-22" x2="0" y2="-45" stroke="#00D2FF" stroke-width="2" opacity="0.5"/>
+            <line x1="0" y1="22" x2="0" y2="45" stroke="#00D2FF" stroke-width="2" opacity="0.5"/>
+            <line x1="-22" y1="0" x2="-45" y2="0" stroke="#00D2FF" stroke-width="2" opacity="0.5"/>
+            <line x1="22" y1="0" x2="45" y2="0" stroke="#00D2FF" stroke-width="2" opacity="0.5"/>
+            <circle cx="0" cy="-45" r="4" fill="#00E676"/>
+            <circle cx="0" cy="45" r="4" fill="#00E676"/>
+            <circle cx="-45" cy="0" r="4" fill="#00E676"/>
+            <circle cx="45" cy="0" r="4" fill="#00E676"/>
+            
+            <!-- Название бренда на щите -->
+            <text x="0" y="4" font-family="Segoe UI, sans-serif" font-weight="900" font-size="10" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CAPITAL</text>
+        </g>
 
-            <!-- Финансовый блок и домен (Прижаты к правому нижнему углу) -->
-            <div style="text-align: right; margin-bottom: 5px;">
-                <div style="font-size: 11px; color: #8E96A7; font-weight: 700; margin-bottom: 2px; letter-spacing: 0.5px;">ЛИЦЕНЗИИ БЕЗОПАСНОСТИ:</div>
-                <div style="font-size: 32px; font-weight: 900; color: var(--accent-green); letter-spacing: -0.5px; text-shadow: 0 0 20px rgba(0,230,118,0.25);">10 $ - 40 $</div>
-                <div style="font-size: 13px; color: var(--cyan-neon); font-weight: 700; margin-top: 4px; letter-spacing: 0.5px;">gebor2011.github.io/shield/</div>
-            </div>
-        </div>
-    </div>
+        <!-- ТЕКСТОВЫЕ БЛОКИ БАННЕРА -->
+        <text x="256" y="70" font-family="Segoe UI, sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CAPITAL SHIELD AI</text>
+        <text x="256" y="98" font-family="Segoe UI, sans-serif" font-weight="700" font-size="11" fill="#00D2FF" text-anchor="middle" letter-spacing="2">ИИ-СУВЕРЕНИТЕТ В КИБЕРБЕЗОПАСНОСТИ</text>
+
+        <!-- Плашка цены -->
+        <rect x="186" y="390" width="140" height="32" rx="8" fill="#161A26" stroke="#00E676" stroke-width="1"/>
+        <text x="256" y="411" font-family="Segoe UI, sans-serif" font-weight="800" font-size="15" fill="#00E676" text-anchor="middle">$10 - $40</text>
+
+        <!-- Адрес вашего официального сайта -->
+        <text x="256" y="455" font-family="Segoe UI, sans-serif" font-weight="600" font-size="12" fill="#8E96A7" text-anchor="middle" letter-spacing="0.5">gebor2011.github.io/shield/</text>
+        <text x="256" y="475" font-family="Segoe UI, sans-serif" font-weight="700" font-size="11" fill="#00D2FF" text-anchor="middle" letter-spacing="1">Служба экспресс-анализа и стресс-тестов</text>
+    </svg>
 
 </body>
 </html>
