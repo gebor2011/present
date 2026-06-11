@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Capital Shield AI Banner</title>
+    <style>
+        body { margin: 0; padding: 0; background: #0F111A; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        svg { background: #0F111A; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body>
+
+    <svg xmlns="http://w3.org" viewBox="0 0 1024 512" width="1024" height="512">
+        <!-- Фон -->
+        <rect width="1024" height="512" fill="#0F111A"/>
+        <circle cx="512" cy="256" r="400" fill="none" stroke="#00D2FF" stroke-width="1" stroke-dasharray="5,5" opacity="0.2"/>
+        
+        <!-- Заголовки -->
+        <text x="512" y="70" font-family="Segoe UI, sans-serif" font-weight="bold" font-size="34" fill="#FFFFFF" text-anchor="middle">CAPITAL SHIELD AI</text>
+        <text x="512" y="110" font-family="Segoe UI, sans-serif" font-weight="600" font-size="15" fill="#00D2FF" text-anchor="middle" letter-spacing="2">AI-POWERED DUE DILIGENCE FOR SERIOUS INVESTORS</text>
+        
+        <!-- Левая часть: Традиционный аудит -->
+        <g transform="translate(200, 170)">
+            <path d="M0 0 L70 -25 L140 0 L140 90 C140 140 70 185 0 200 C-70 140 -140 90 -140 90 L-140 0 Z" fill="#161A26" stroke="#FFD700" stroke-width="3" opacity="0.9"/>
+            <text x="0" y="55" font-family="Segoe UI, sans-serif" font-weight="bold" font-size="13" fill="#8E96A7" text-anchor="middle" letter-spacing="0.5">ТРАДИЦИОННЫЙ АУДИТ (B2B)</text>
+            <text x="0" y="105" font-family="Segoe UI, sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" text-anchor="middle">$5,000 - $50,000+</text>
+        </g>
+
+        <!-- Правая часть: Capital Shield AI -->
+        <g transform="translate(512, 170)">
+            <path d="M0 0 L75 -25 L150 0 L150 95 C150 145 75 195 0 210 C-75 145 -150 95 -150 95 L-150 0 Z" fill="#161A26" stroke="#00D2FF" stroke-width="4.5"/>
+            <text x="0" y="50" font-family="Segoe UI, sans-serif" font-weight="bold" font-size="15" fill="#FFFFFF" text-anchor="middle">CAPITAL SHIELD AI</text>
+            <text x="0" y="75" font-family="Segoe UI, sans-serif" font-size="12" fill="#8E96A7" text-anchor="middle">(B2C & Private Investors)</text>
+            <text x="0" y="125" font-family="Segoe UI, sans-serif" font-weight="800" font-size="30" fill="#00E676" text-anchor="middle">$10 - $40</text>
+        </g>
+
+        <!-- Список фич справа -->
+        <g transform="translate(730, 185)" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#F5F6FA">
+            <text x="0" y="0">📄 ЭКСПРЕСС-АНАЛИЗ КОДА</text>
+            <text x="0" y="35">📊 DUE DILIGENCE ПРОЕКТОВ</text>
+            <text x="0" y="70">📉 АНАЛИЗ ДОХОДНОСТИ</text>
+            <text x="0" y="105">👥 KYC-ПРОВЕРКА КОМАНДЫ</text>
+        </g>
+
+        <!-- Кнопка действия и ссылка -->
+        <rect x="362" y="420" width="300" height="42" rx="12" fill="#161A26" stroke="#00D2FF" stroke-width="1.5"/>
+        <text x="512" y="446" font-family="Segoe UI, sans-serif" font-weight="bold" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ЗАЩИТИТЕ СВОЙ КАПИТАЛ</text>
+        <text x="512" y="488" font-family="Segoe UI, sans-serif" font-weight="600" font-size="13" fill="#8E96A7" text-anchor="middle">gebor2011.github.io/shield/</text>
+    </svg>
+
+</body>
+</html>
