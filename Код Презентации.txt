@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Capital Shield AI – Презентация сервиса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0B0E17;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      color: #E8EDF5;
+      line-height: 1.4;
+    }
+
+    /* Слайды */
+    .slide {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 32px;
+      border-bottom: 1px solid #2A2F3F;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Типографика */
+    .badge {
+      display: inline-block;
+      background: #1A1F2C;
+      border: 1px solid #3A4050;
+      border-radius: 40px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #9CA3AF;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .subhead {
+      font-size: 18px;
+      color: #9CA3AF;
+      margin-bottom: 32px;
+    }
+
+    /* Сетки */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .card {
+      background: #12161F;
+      border-radius: 24px;
+      padding: 24px;
+      border: 1px solid #2A2F3F;
+    }
+
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card-price {
+      font-size: 28px;
+      font-weight: 800;
+      color: #E8EDF5;
+      margin: 16px 0 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #1A1F2C;
+      border: 1px solid #3A4050;
+      color: #E8EDF5;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 12px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: 0.2s;
+      margin-top: 16px;
+    }
+
+    .btn:hover {
+      background: #2A2F3F;
+      border-color: #9CA3AF;
+    }
+
+    .highlight {
+      color: #C0A53E;
+    }
+
+    .list-check {
+      list-style: none;
+      margin-top: 16px;
+    }
+
+    .list-check li {
+      padding: 8px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14px;
+      border-bottom: 1px solid #2A2F3F;
+    }
+
+    .list-check li::before {
+      content: "✓";
+      color: #C0A53E;
+      font-weight: 700;
+    }
+
+    hr {
+      border-color: #2A2F3F;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+      .slide {
+        padding: 40px 20px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 26px;
+      }
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- СЛАЙД 1 – Главный посыл -->
+  <div class="slide">
+    <div class="container">
+      <div class="badge">AI-powered due diligence for serious investors</div>
+      <h1>CertiK проверяет <span style="opacity:0.6;">код</span>.<br>Мы проверяем <span class="highlight">проект</span>.</h1>
+      <div class="subhead">Бизнес-модель · Команда · Деньги · Эндшпиль</div>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div>🔍 OSINT-разведка</div>
+        <div>⚖️ Юридическая чистота</div>
+        <div>📉 Математика пирамиды</div>
+        <div>💸 Денежный след</div>
+        <div>🤖 Технический аудит</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 2 – Для кого -->
+  <div class="slide">
+    <div class="container">
+      <h2>🛡️ Кому необходим Capital Shield AI</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Инвесторам</h3>
+          <p style="color: #9CA3AF;">Защитить капитал от скрытых багов, внезапных скамов и недобросовестных команд.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👥</div>
+          <h3>Блогерам и лидерам</h3>
+          <p style="color: #9CA3AF;">Твоя репутация стоит дороже любых реферальных. Не зови людей в проекты, которые завтра закроются.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Новичкам в крипте</h3>
+          <p style="color: #9CA3AF;">Не умеешь читать код смарт-контракта? Capital Shield AI сделает это за тебя.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 3 – Что входит в отчёты -->
+  <div class="slide">
+    <div class="container">
+      <h2>📋 Что входит в отчёты</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <h3>Математический и экономический анализ</h3>
+          <p style="color: #9CA3AF;">Устойчивость маркетинга, баланс распределения средств, жизнеспособность пулов ликвидности, скрытые дефициты.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚪</div>
+          <h3>Анализ условий и регламента вывода</h3>
+          <p style="color: #9CA3AF;">Скрытые комиссии, лимиты, искусственные барьеры, препятствующие свободному выводу средств.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Верификация маркетинговой активности</h3>
+          <p style="color: #9CA3AF;">ИИ-мониторинг соцсетей: боты vs живые люди, реальная вовлечённость, признаки хайп-проекта.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h3>Технический аудит кода и токеномики</h3>
+          <p style="color: #9CA3AF;">Сканирование уязвимостей, скрытые бэкдоры, функции заморозки балансов, скрытые комиссии.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 8px;">
+        <div class="card-icon">🎯</div>
+        <h3>Понятный вердикт</h3>
+        <p style="color: #9CA3AF;">Структурированный отчёт без воды. Объективная оценка рисков и чёткая рекомендация — заходить или нет.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 4 – Тарифы -->
+  <div class="slide">
+    <div class="container">
+      <h2>💰 Тарифные планы</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Аудит сетевых и партнёрских проектов</h3>
+          <div class="card-price">$10</div>
+          <ul class="list-check">
+            <li>Анализ устойчивости модели</li>
+            <li>Оценка маркетинговых рисков</li>
+            <li>Реальный приток ликвидности</li>
+            <li>Формула безопасного входа</li>
+          </ul>
+          <a href="https://t.me/capitalshield_ai" class="btn">Заказать →</a>
+        </div>
+        <div class="card">
+          <h3>Технический аудит смарт-контрактов</h3>
+          <div class="card-price">$20</div>
+          <ul class="list-check">
+            <li>Mint / Honeypot</li>
+            <li>Ownership / Liquidity Lock</li>
+            <li>Деконструкция логики контракта</li>
+            <li>Выявление скрытых уязвимостей</li>
+          </ul>
+          <a href="https://t.me/capitalshield_ai" class="btn">Заказать →</a>
+        </div>
+        <div class="card">
+          <h3>Комплексный Due Diligence</h3>
+          <div class="card-price">$30</div>
+          <ul class="list-check">
+            <li>14 модулей безопасности</li>
+            <li>OSINT + юристы + деньги + эндшпиль</li>
+            <li>ИИ-карта управления рисками</li>
+            <li>Цветовой вердикт 🔴🟠🟡🟢🔵</li>
+          </ul>
+          <a href="https://t.me/capitalshield_ai" class="btn">Заказать →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 5 – Новый VIP-модуль: стресс-тест -->
+  <div class="slide">
+    <div class="container">
+      <div class="badge">🔥 НОВАЯ УСЛУГА</div>
+      <h2>ИИ-СТРЕСС-ТЕСТ «ФОРПОСТ»</h2>
+      <p class="subhead" style="margin-bottom: 16px;">Оценка запаса прочности финансовой модели и аудит скрытых дефицитов</p>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">⏳</div>
+          <h3>Сколько осталось?</h3>
+          <p style="color: #9CA3AF;">Прогнозный горизонт жизни проекта на основе динамики кассы и притока новых участников.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚨</div>
+          <h3>Когда начнутся проблемы?</h3>
+          <p style="color: #9CA3AF;">Индикаторы эндшпиля: задержки вывода, технические сбои, смена маркетинга.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>Как вывести команду?</h3>
+          <p style="color: #9CA3AF;">План санации: мягкий вывод, подготовка альтернативы, красные черты.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Для кого</h3>
+          <p style="color: #9CA3AF;">Лидеры сетевых структур, топ-партнёры, кто уже внутри и чувствует: «что-то не так».</p>
+        </div>
+      </div>
+      <div class="card" style="text-align: center;">
+        <div class="card-price">$49</div>
+        <p style="margin: 8px 0 16px; color: #9CA3AF;">Одна консультация спасает репутацию и команду</p>
+        <a href="https://t.me/capitalshield_ai" class="btn">Заказать «ФОРПОСТ» →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 6 – Франчайзи / Партнёрство -->
+  <div class="slide">
+    <div class="container">
+      <h2>🔥 Франчайзи Capital Shield AI</h2>
+      <p class="subhead">Зарабатывайте на IT-аудите проектов. <strong style="color:white;">Без вложений.</strong></p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">💵</div>
+          <h3>0 ₽ вложений</h3>
+          <p style="color: #9CA3AF;">Никаких лицензий. Никакого стартового капитала.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Свободная цена</h3>
+          <p style="color: #9CA3AF;">Ставите свою наценку — забираете 100% разницы сразу.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Моментальный доход</h3>
+          <p style="color: #9CA3AF;">Клиент платит вам → вы заказываете аудит у нас → остальное — ваш доход.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="https://t.me/capitalshield_ai" class="btn" style="background: #1A1F2C;">👉 Подать заявку: написать «Франшиза»</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 7 – Контакты -->
+  <div class="slide" style="border-bottom: none;">
+    <div class="container" style="text-align: center;">
+      <div class="badge">🛡️ Capital Shield AI</div>
+      <h2 style="margin-bottom: 16px;">Проверьте проект<br>прежде, чем вложить доллар</h2>
+      <p style="margin-bottom: 32px; color: #9CA3AF;">Задать вопрос или заказать аудит — Telegram</p>
+      <a href="https://t.me/capitalshield_ai" class="btn" style="background: #2A2F3F;">📲 Написать в Telegram</a>
+      <p style="margin-top: 48px; font-size: 13px; color: #6B7280;">© Capital Shield AI — AI‑powered due diligence for serious investors</p>
+    </div>
+  </div>
+</body>
+</html>
